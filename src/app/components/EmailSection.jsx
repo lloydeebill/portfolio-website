@@ -46,7 +46,7 @@ const EmailSection = () => {
             <h5 className="text-xl font-bold text-white my-2">Connect with Me</h5>
             <p className='text-gray-300 mb-4 max-w-md text-xl'>
                 {''}
-                I am actively exploring new opportunities and welcome any inquiries. Feel free to reach out if you have any questions or simply want to connect. I'm committed to responding promptly and am excited to engage in meaningful conversations with you!
+                I am actively exploring new opportunities and welcome any inquiries. Feel free to reach out if you have any questions or simply want to connect. I&apos;m committed to responding promptly and am excited to engage in meaningful conversations with you!
             </p>
             <div className='socials flex flex-row gap-2'>
               <Link href='www.linkedin.com/in/lloyd-bill-lariosa-4a780621b'>
@@ -84,8 +84,8 @@ const EmailSection = () => {
                   id='subject'
                   required
                   className='bg-[#181818] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5'
-                  placeholder="Come on, let's connect!">
-                </input>
+                  placeholder="Come on, let&apos;s connect!">
+                  </input>
               </div>
               <div>
                 <label htmlFor='email' type='email' className='text-white block mb-2 text-sm font-medium'>Message</label>
