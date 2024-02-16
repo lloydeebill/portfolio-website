@@ -10,8 +10,8 @@ const HeroSection = () => {
 
     <section className='grid grid-cols-1 lg:grid-cols-12 my-4 lg:gap-16'>
         <div className='col-span-7 place-self-center place-items-center grid lg:place-items-start'>
-            <h1 className='max-w-2xl mb-2 lg:text-8xl text-3xl font-extrabold leading'>Hi, I&apos;m</h1>
-            <h1 className='max-w-2xl mb-2 lg:text-9xl text-3xl font-extrabold leading'>Lloyd Bill</h1>
+            <h1 className='text-white max-w-2xl mb-2 lg:text-8xl text-3xl font-extrabold leading'>Hi, I&apos;m</h1>
+            <h1 className='text-white marker:max-w-2xl mb-2 lg:text-9xl text-3xl font-extrabold leading'>Lloyd Bill</h1>
             <span className='text-base sm:text-lg lg:text-4xl mt-2 text-center'>Your go to guy for {''}
             </span>
             <TypeAnimation className='text-2xl lg:text-6xl text-center lg:mt-6 sm:mt-5 font-semibold text-orange-600' sequence={[
@@ -36,8 +36,8 @@ const HeroSection = () => {
                 src="/hero.svg"
                 alt="hero image"
                 className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
-                width={1500}
-                height={1500}
+                width={500}
+                height={500}
               />
             </div>
         </div>

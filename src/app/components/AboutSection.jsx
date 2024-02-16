@@ -10,7 +10,7 @@ const about_data = [
     title: 'Skills',
     id: 'skills',
     content: (
-      <ul className='list-disc pl-2'>
+      <ul className='list-disc pl-2 lg:text-xl'>
         <li>Javascript</li>
         <li>NodeJS</li>
         <li>React</li>
@@ -24,7 +24,7 @@ const about_data = [
     title: 'Education',
     id: 'education',
     content: (
-      <ul className='list-disc pl-2'>
+      <ul className='list-disc pl-2 lg:text-xl'>
         <li>University of Southeastern Philippines</li>
         <li>Caraga State University</li>
       </ul>
@@ -34,7 +34,7 @@ const about_data = [
     title: 'Certifications',
     id: 'certifications',
     content: (
-      <ul className='list-disc pl-2'>
+      <ul className='list-disc pl-2 lg:text-xl'>
         <li>Coursera Python Certificate</li>
       </ul>
     )
@@ -55,14 +55,14 @@ const AboutSection = () => {
   return (
     <section className='text-white' id='about'>
       <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
-      <Image src='/about-img.svg' alt='about-img' width={1500} height={1000}/>
-      <div className='mt-4 md:mt-0 text-left flex flex-col h-full'> 
-        <h2 className='text-4xl font-bold text-white mb-4'>About Me</h2>
-        <p className='text-base lg:text-lg'>
-          I am passionate IT student with expertise of JavaScript, Node.js, HTML, CSS, Next.js, React, MongoDB and Electron, which allows me to craft innovative and efficient solutions for complex technical challenges. Beyond development, I am deeply involved in IT consulting, where I leverage my technical knowledge and problem-solving skills to advise on the design, development, and implementation of IT systems.
-        </p>
-          <div className='flex flex-row justify-start mt-8'>
-          <TabButton
+        <Image src='/about1.svg' alt='about-img' className='lg:ml-16' width={450} height={500}/>
+        <div className='mt-4 md:mt-0 text-left flex flex-col h-full'> 
+        <h2 className='text-4xl font-bold text-white mb-4 text-center md:text-left'>About Me</h2>
+          <p className='text-base lg:text-2xl'>
+          I am passionate IT student with expertise in JavaScript, Node.js, HTML, CSS, Next.js, React, MongoDB, and Electron. I craft innovative solutions for technical challenges and am deeply involved in IT consulting.
+          </p>
+          <div className='flex flex-row justify-center md:justify-start mt-8 lg:text-2xl'>
+            <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
             >
@@ -84,11 +84,11 @@ const AboutSection = () => {
               Certifications{" "}
             </TabButton>
           </div>
-          <div className='mt-8'>{about_data.find((t) => t.id === tab).content}
+          <div className='mt-8'>
+            {about_data.find((t) => t.id === tab).content}
           </div>
+        </div>
       </div>
-      </div>
-      
     </section>
   );
 };
