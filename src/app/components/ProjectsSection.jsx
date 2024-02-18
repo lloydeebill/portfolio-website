@@ -10,7 +10,7 @@ const projectsData = [
     {
     id:1,
     title: 'LCR OFFICE WEBSITE',
-    description: 'E-LCR Buenavista Website for Customer Service Operations',
+    description: 'E-LCR Buenavista Website for Customer Services',
     image: '/images/projects/1.png',
     gitUrl: '/',
     previewUrl: '/',
@@ -18,8 +18,8 @@ const projectsData = [
     },
     {
     id:2,
-    title: 'ELCRIS DESKTOP APPLICATION',
-    description: 'LCR Buenavista Desktop Application for Storing,Accessing Civil Registry Data',
+    title: 'ELCRIS APLICATION',
+    description: 'LCR Buenavista Desktop Application System Database',
     image: '/images/projects/2.png',
     gitUrl: '/',
     previewUrl: '/',
