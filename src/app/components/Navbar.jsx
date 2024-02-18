@@ -29,7 +29,7 @@ const Navbar = () => {
     return (
         <nav className='fixed top-0 left-0 right-0 z-10 bg-slate-950 bg-opacity-90 pt-5 pb-5'>
             <div className="flex flex-wrap items-center justify-between mx-auto px-10 py-0">
-                <h1>LLOYD BILL</h1>
+                <h1 className='text-white'>LLOYD BILL</h1>
                 <div className="mobile-menu block md:hidden">
                     {!navbarOpen ? (
                         <button onClick={() => setNavbarOpen(true)}className="flex items-center px-3 py-2 text-white hover:text-white hover:border-white">
