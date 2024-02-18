@@ -6,6 +6,23 @@ import Image from 'next/image';
 import { TypeAnimation } from 'react-type-animation';
 
 const HeroSection = () => {
+
+    const handleResumeDownload = () => {
+        const link = document.createElement('a');
+        link.href = '/LARIOSA_RESUME.pdf';
+        link.download = 'Lloyd_Bill_Resume.pdf';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+    };
+
+    const scrollToContact = () => {
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+            contactSection.scrollIntoView({behavior: 'smooth'});
+        }
+    };
+
     return (
 
     <section className='grid grid-cols-1 lg:grid-cols-12 my-4 lg:gap-16'>
@@ -26,8 +43,8 @@ const HeroSection = () => {
             speed={50}
             repeat = {Infinity} />
         <div className='mt-5'>
-            <button className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-white hover:bg-slate-200 text-black text-lg'>Get in Touch</button>
-            <button className='px-6 py-3 w-full sm:w-fit rounded-full border border-gray-300 bg-transparent hover:bg-slate-800 text-white  mt-3 text-lg'>Check Resume</button>
+            <button onClick = {scrollToContact} className='px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-white hover:bg-slate-200 text-black text-lg'>Get in Touch</button>
+            <button onClick = {handleResumeDownload} className='px-6 py-3 w-full sm:w-fit rounded-full border border-gray-300 bg-transparent hover:bg-slate-800 text-white  mt-3 text-lg'>Check Resume</button>
         </div>             
         </div>
         <div className='col-span-5 place-self-center mt-4 lg:mt-0'>
